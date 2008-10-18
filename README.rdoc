@@ -1,0 +1,5 @@
+== rMeetup
+
+A simple Ruby gem to access the Meetup API.
+
+TODO: Doc, Doc, Doc
