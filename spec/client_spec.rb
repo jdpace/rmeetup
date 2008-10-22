@@ -11,7 +11,7 @@ end
 
 describe RMeetup::Client, 'trying to fetch an unknown type' do
   before do
-    RMeetup::Client.api_key = @api_key
+    RMeetup::Client.api_key = API_KEY
   end
   
   it 'should throw an error' do
