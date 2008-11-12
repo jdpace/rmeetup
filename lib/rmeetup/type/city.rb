@@ -8,7 +8,7 @@ module RMeetup
     # as progammatically fetch relative data types
     # based on this city.
     class City
-      attr_accessor :city, :lat, :lon, :coutry, :state, :zip, :members
+      attr_accessor :city, :lat, :lon, :country, :state, :zip, :members
       
       def initialize(city = {})
         self.city         = city['city']

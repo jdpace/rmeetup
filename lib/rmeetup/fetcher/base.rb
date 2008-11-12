@@ -26,7 +26,7 @@ module RMeetup
       # Override this method to ensure
       # neccessary options are passed
       # for the request.
-      def fetch(options)
+      def fetch(options = {})
         url = build_url(options)
         
         json = get_response(url)
@@ -53,7 +53,7 @@ module RMeetup
         def build_url(options)
           options = encode_options(options)
           
-          self.base_url + self.params_for(options)
+          base_url + params_for(options)
         end
       
         def base_url
